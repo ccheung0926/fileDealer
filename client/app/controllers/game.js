@@ -45,7 +45,7 @@ angular.module('treasureHunt.game', ['treasureHunt.services', 'ngCookies'])
       if($scope.currentNode.nodeId === $scope.gameLength){
         $location.path('/finishGame');
       }
-    };
+    };  
 
     checkCoords = function(data){
       $scope.$apply(function(){
