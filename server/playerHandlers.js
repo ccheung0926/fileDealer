@@ -85,8 +85,13 @@ module.exports = {
     console.log('trying to find token ', req.body.token);
     console.log('token length ', req.body.token.length);
     res.send(true);
-  }
+  },
 
+  creatorsData: function(req, res){
+    db.creatorsData(function(results){
+      res.send(results);
+    })
+  }
 };
 
 // module.exports.checkGameCallbacks = [

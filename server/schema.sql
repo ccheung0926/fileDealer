@@ -67,3 +67,12 @@ CREATE TABLE nodePics (
   FOREIGN KEY (gameId) REFERENCES gameInfo(gameId),
   FOREIGN KEY (userName) REFERENCES userInfo(userName)
 );
+-- test data
+
+INSERT INTO userInfo(userName, password, macadamia)
+VALUES
+(
+"cindy",
+"$2a$05$GJTN1XRkoHixLv6/XtbZT.JXt5izCpmxHi2e7wFsrVaNt6CUNcnxq",
+10000
+);  

@@ -29,6 +29,7 @@ app.post('/update', requestHandlers.updateGame);
 
 app.post('/userImages', requestHandlers.getNodePics);
 app.post('/newUserImage', requestHandlers.postNodePic);
+app.get('/about', playerHandlers.creatorsData);
 
 // invite players
 app.post('/invite', playerHandlers.invitePlayers);
